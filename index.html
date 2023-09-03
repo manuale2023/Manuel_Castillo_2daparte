@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="MRO Bienes Raíces página oficial. Encuentra las mejores ofertas del mercado">
+    <meta name="keywords" content="Inmobiliaria, Bienes Raíces, Inmuebles">
+    <link rel="icon" href="assets/img/MROFAVICON.jpg" type="image/png">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <title>MRO Bienes Raíces</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <div class="dropdown">
+                <button class="dropbtn">Propiedades ▼</button>
+                <div class="dropdown-content">
+                    <a href="pages/casas.html">Casas</a>
+                    <a href="pages/apartamentos.html">Apartamentos</a>
+                </div>
+            </div>
+            <a href="pages/nosotros.html">Nosotros</a>
+            <a href="pages/agendarse.html">Agendarse</a>
+        </nav>
+    </header>
+    <main>
+        <div class="logo">
+            <img src="assets/img/Logo-MRO_Marca.png" alt="Logo de mi página">
+        </div>
+        <div class="formulario"> 
+            <form id="search-form">
+                <label for="precio">Precio máximo USD:</label>
+                <input type="number" id="precio" name="precio" min="0">
+
+                <label for="zona">Transacción:</label>
+                <select id="zona" name="zona">
+                    <option value="compra">Compra</option>
+                    <option value="venta">Venta</option>
+                </select>
+                
+                <label for="departamento">Departamento:</label>
+                <select id="departamento" name="departamento">
+                    <option value="montevideo">Montevideo</option>
+                    <option value="canelones">Canelones</option>
+                    <option value="san-jose">San Jose</option>
+                </select>
+                
+                <button type="button" onclick="buscar()">Buscar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>&copy; 2023 MRO Bienes Raíces. Todos los derechos reservados.</p>
+            <p>Contactenos: mrobienesraices@gmail.com</p>
+            <p>Web Design by: Manuel Castillo</p>
+        </div>
+    </footer>
+</body>
+</html>
